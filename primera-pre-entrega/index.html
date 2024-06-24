@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase Nº2 - Control de flujos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simulador de Pagos en Cuotas</h1>
+        <form id="formularioPago">
+          <label for="monto">Monto:</label>
+          <input type="number" id="monto" name="monto" step="0.01" required />
+          <br />
+          <label for="tieneInteres">¿El monto tiene intereses?</label>
+          <input type="radio" id="siInteres" name="tieneInteres" value="si"/>
+          <label for="siInteres">Sí</label>
+          <input type="radio" id="noInteres" name="tieneInteres" value="no"/>
+          <label for="noInteres">No</label>
+          <br />
+          <div id="intereses">
+            <label for="tasaInteres">Tasa de interés (%):</label>
+            <input type="number" id="tasaInteres" name="tasaInteres" step="0.01" />
+            <br />
+          </div>
+          <label for="numeroCuotas">Número de cuotas:</label>
+          <input type="number" id="numeroCuotas" name="numeroCuotas" required />
+          <br /> <br>
+          <button type="submit">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+
+<script src="./js/main.js"></script>    
+
+</body>
+</html>
